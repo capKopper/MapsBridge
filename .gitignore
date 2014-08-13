@@ -1,0 +1,2 @@
+# Exclude the Vendor directory, that may be present in dev environment.
+vendor/
