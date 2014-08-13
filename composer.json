@@ -18,7 +18,7 @@
     "minimum-stability": "stable",
     "autoload": {
         "psr-4": {
-            "MapsSystem\\Bridge": "src/"
+            "MapsSystem\\Bridge\\": "src/"
         }
     }
 }
