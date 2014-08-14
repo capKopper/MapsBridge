@@ -32,7 +32,7 @@ abstract class AbstractObject implements ObjectInterface
 
   /**
    * @JMS\Type("integer")
-   * @SerializedName("idobject_parent")
+   * @JMS\SerializedName("idobject_parent")
    * @JMS\@Expose
    *
    * @var int
@@ -41,7 +41,7 @@ abstract class AbstractObject implements ObjectInterface
 
   /**
    * @JMS\Type("integer")
-   * @SerializedName("idobject_origin")
+   * @JMS\SerializedName("idobject_origin")
    * @JMS\@Expose
    *
    * @var int
@@ -66,7 +66,7 @@ abstract class AbstractObject implements ObjectInterface
 
   /**
    * @JMS\Type("integer")
-   * @SerializedName("object_type")
+   * @JMS\SerializedName("object_type")
    * @JMS\@Expose
    *
    * @var int
@@ -75,7 +75,7 @@ abstract class AbstractObject implements ObjectInterface
 
   /**
    * @JMS\Type("integer")
-   * @SerializedName("seq")
+   * @JMS\SerializedName("seq")
    * @JMS\@Expose
    *
    * @var int
@@ -92,7 +92,7 @@ abstract class AbstractObject implements ObjectInterface
 
   /**
    * @JMS\Type("DateTime<'U'>")
-   * @SerializedName("lastmodification")
+   * @JMS\SerializedName("lastmodification")
    * @JMS\@Expose
    *
    * @var \DateTime
@@ -117,7 +117,7 @@ abstract class AbstractObject implements ObjectInterface
 
   /**
    * @JMS\Type("array")
-   * @SerializedName("medias")
+   * @JMS\SerializedName("medias")
    * @JMS\@Expose
    *
    * @var array
