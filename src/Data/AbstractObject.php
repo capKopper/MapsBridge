@@ -24,7 +24,7 @@ abstract class AbstractObject implements ObjectInterface
 
   /**
    * @JMS\Type("integer")
-   * @JMS\@Expose
+   * @JMS\Expose
    *
    * @var int
    */
@@ -33,7 +33,7 @@ abstract class AbstractObject implements ObjectInterface
   /**
    * @JMS\Type("integer")
    * @JMS\SerializedName("idobject_parent")
-   * @JMS\@Expose
+   * @JMS\Expose
    *
    * @var int
    */
@@ -42,7 +42,7 @@ abstract class AbstractObject implements ObjectInterface
   /**
    * @JMS\Type("integer")
    * @JMS\SerializedName("idobject_origin")
-   * @JMS\@Expose
+   * @JMS\Expose
    *
    * @var int
    */
@@ -50,7 +50,7 @@ abstract class AbstractObject implements ObjectInterface
 
   /**
    * @JMS\Type("string")
-   * @JMS\@Expose
+   * @JMS\Expose
    *
    * @var string
    */
@@ -58,7 +58,7 @@ abstract class AbstractObject implements ObjectInterface
 
   /**
    * @JMS\Type("integer")
-   * @JMS\@Expose
+   * @JMS\Expose
    *
    * @var int
    */
@@ -67,7 +67,7 @@ abstract class AbstractObject implements ObjectInterface
   /**
    * @JMS\Type("integer")
    * @JMS\SerializedName("object_type")
-   * @JMS\@Expose
+   * @JMS\Expose
    *
    * @var int
    */
@@ -76,7 +76,7 @@ abstract class AbstractObject implements ObjectInterface
   /**
    * @JMS\Type("integer")
    * @JMS\SerializedName("seq")
-   * @JMS\@Expose
+   * @JMS\Expose
    *
    * @var int
    */
@@ -84,7 +84,7 @@ abstract class AbstractObject implements ObjectInterface
 
   /**
    * @JMS\Type("integer")
-   * @JMS\@Expose
+   * @JMS\Expose
    *
    * @var int
    */
@@ -93,7 +93,7 @@ abstract class AbstractObject implements ObjectInterface
   /**
    * @JMS\Type("DateTime<'U'>")
    * @JMS\SerializedName("lastmodification")
-   * @JMS\@Expose
+   * @JMS\Expose
    *
    * @var \DateTime
    */
@@ -101,7 +101,7 @@ abstract class AbstractObject implements ObjectInterface
 
   /**
    * @JMS\Type("array")
-   * @JMS\@Expose
+   * @JMS\Expose
    *
    * @var array
    */
@@ -109,7 +109,7 @@ abstract class AbstractObject implements ObjectInterface
 
   /**
    * @JMS\Type("array")
-   * @JMS\@Expose
+   * @JMS\Expose
    *
    * @var array
    */
@@ -118,7 +118,7 @@ abstract class AbstractObject implements ObjectInterface
   /**
    * @JMS\Type("array")
    * @JMS\SerializedName("medias")
-   * @JMS\@Expose
+   * @JMS\Expose
    *
    * @var array
    */

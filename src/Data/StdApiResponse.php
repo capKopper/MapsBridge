@@ -37,7 +37,7 @@ class StdApiResponse implements DataInterface
   /**
    * @JMS\Type("integer")
    * @JMS\SerializedName("status")
-   * @JMS\@Expose
+   * @JMS\Expose
    *
    * @var int
    */
