@@ -35,11 +35,28 @@ class StdApiResponse implements DataInterface
   protected $response;
 
   /**
+   * @JMS\Type("integer")
+   * @JMS\SerializedName("status")
+   * @JMS\@Expose
+   *
+   * @var int
+   */
+  protected $responseStatus;
+
+  /**
    * Get the Api response.
    */
   public function getResponse()
   {
       return $this->response;
+  }
+
+  /**
+   * Get the response status.
+   */
+  public function getResponseStatus()
+  {
+      return $this->responseStatus;
   }
 
 }
