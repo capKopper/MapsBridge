@@ -14,32 +14,16 @@
 
 namespace MapsSystem\Bridge\Data;
 
-use JMS\Serializer\Annotation AS JMS;
-
 /**
- * The StdApiResponse class.
+ * This interface defines nothing by itself and represents any MaPS System® data.
+
+ * Note that we use an exclusion policy, which avoid advanced child classes to
+ * specify an "Exclude" annotation on each non-native properties.
  *
- * @todo implement ArrayAccess
+ * This implies that all properties to be (de)serialized have to be exposed.
+ *
+ * @JMS\ExclusionPolicy("all")
  */
-class StdApiResponse implements DataInterface
+interface DataInterface
 {
-
-  /**
-   * The deserialized response data.
-   *
-   * @JMS\Expose
-   * @JMS\Type("array")
-   *
-   * @var array
-   */
-  protected $response;
-
-  /**
-   * Get the Api response.
-   */
-  public function getResponse()
-  {
-      return $this->response;
-  }
-
 }
