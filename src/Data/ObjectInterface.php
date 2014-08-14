@@ -17,7 +17,7 @@ namespace MapsSystem\Bridge\Data;
 /**
  * This interface defines the minimum required method for a MaPS System® object.
  */
-interface ObjectInterface
+interface ObjectInterface extends DataInterface
 {
 
   /**

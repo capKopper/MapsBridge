@@ -18,11 +18,6 @@ use JMS\Serializer\Annotation AS JMS;
 
 /**
  * The base class for any MaPS System® object.
- *
- * Note that we use an exclusion policy, which avoid advanced child classes to
- * specify an "Exclude" annotation on each non-native properties.
- *
- * @JMS\ExclusionPolicy("all")
  */
 abstract class AbstractObject implements ObjectInterface
 {
