@@ -41,6 +41,18 @@ abstract class AbstractData implements DataInterface
     protected $responseMessage;
 
     /**
+     * Class constructor.
+     *
+     * @param int $status The data status.
+     *
+     * @return \MapsSystem\Bridge\Data\Api\DataInterface
+     */
+    public function __construct($status = self::STATUS_CUSTOM)
+    {
+        $this->responseStatus = $status;
+    }
+
+    /**
      * (@inheritdoc)
      */
     public function getResponseStatus()
@@ -54,6 +66,14 @@ abstract class AbstractData implements DataInterface
     public function getResponseMessage()
     {
         return $this->responseMessage;
+    }
+
+    /**
+     * (@inheritdoc)
+     */
+    public function isValid()
+    {
+        return STATUS_CUSTOM;
     }
 
 }
