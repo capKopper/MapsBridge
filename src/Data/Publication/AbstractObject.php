@@ -12,7 +12,7 @@
  * @link       http://www.capkopper.fr/ capKopper
  */
 
-namespace MapsSystem\Bridge\Data;
+namespace MapsSystem\Bridge\Data\Publication;
 
 use JMS\Serializer\Annotation AS JMS;
 

@@ -68,7 +68,7 @@ class HttpApiProfile extends AbstractProfile
     {
         $defaults = array(
             'method' => 'GET',
-            'type' => 'MapsSystem\\Bridge\\Data\\StdApiResponse',
+            'type' => 'MapsSystem\\Bridge\\Data\\Api\\Response\\StdApiResponse',
         );
 
         return $defaults + $this->commectorDefaultOptions();
