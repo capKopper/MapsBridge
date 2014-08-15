@@ -12,11 +12,12 @@
  * @link       http://www.capkopper.fr/ capKopper
  */
 
-namespace MapsSystem\Bridge\Data;
+namespace MapsSystem\Bridge\Data\Api;
 
 /**
- * The StdObject class.
+ * Define a standard piece of data from a MaPS System® API response.
  */
-class StdObject extends AbstractObject
+class StdData extends AbstractData
 {
 }
+

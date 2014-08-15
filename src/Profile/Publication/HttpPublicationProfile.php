@@ -101,7 +101,7 @@ class HttpPublicationProfile extends AbstractPublicationProfile
         $defaults = array(
             'method' => 'POST',
             'format' => $this->getFormat(),
-            'type' => 'MapsSystem\\Bridge\\Data\\StdObject',
+            'type' => 'MapsSystem\\Bridge\\Data\\Publication\\StdObject',
         );
 
         return $defaults + $this->commectorDefaultOptions();
