@@ -14,6 +14,8 @@
 
 namespace MapsSystem\Bridge\Data\Api\Response;
 
+use JMS\Serializer\Annotation AS JMS;
+
 /**
  * This interface defines nothing by itself and represents any MaPS System® data
  * provided by the API.

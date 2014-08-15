@@ -14,6 +14,8 @@
 
 namespace MapsSystem\Bridge\Data\Publication;
 
+use JMS\Serializer\Annotation AS JMS;
+
 /**
  * This interface defines the minimum required method for a MaPS System® object.
  *

@@ -14,6 +14,8 @@
 
 namespace MapsSystem\Bridge\Data\Api;
 
+use JMS\Serializer\Annotation AS JMS;
+
 /**
  * Base for building any kind of MaPS System® API data.
  */
