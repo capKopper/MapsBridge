@@ -12,11 +12,11 @@
  * @link       http://www.capkopper.fr/ capKopper
  */
 
-namespace MapsSystem\Bridge\Data;
+namespace MapsSystem\Bridge\Data\Api;
 
 /**
  * This interface defines nothing by itself and represents any MaPS System® data.
-
+ *
  * Note that we use an exclusion policy, which avoid advanced child classes to
  * specify an "Exclude" annotation on each non-native properties.
  *
@@ -26,4 +26,16 @@ namespace MapsSystem\Bridge\Data;
  */
 interface DataInterface
 {
+
+    /**
+     * Get the response status.
+     */
+    public function getResponseStatus();
+
+    /**
+     * Get the response message.
+     */
+    public function getResponseMessage();
+
 }
+

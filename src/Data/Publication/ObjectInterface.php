@@ -12,12 +12,19 @@
  * @link       http://www.capkopper.fr/ capKopper
  */
 
-namespace MapsSystem\Bridge\Data;
+namespace MapsSystem\Bridge\Data\Publication;
 
 /**
  * This interface defines the minimum required method for a MaPS System® object.
+ *
+ * Note that we use an exclusion policy, which avoid advanced child classes to
+ * specify an "Exclude" annotation on each non-native properties.
+ *
+ * This implies that all properties to be (de)serialized have to be exposed.
+ *
+ * @JMS\ExclusionPolicy("all")
  */
-interface ObjectInterface extends DataInterface
+interface ObjectInterface
 {
 
   /**
@@ -32,7 +39,7 @@ interface ObjectInterface extends DataInterface
    *
    * @param int $id The new object ID.
    *
-   * @return \MapsSystem\Bridge\Data\ObjectInterface The current instance
+   * @return \MapsSystem\Bridge\Data\Publication\ObjectInterface The current instance
    */
   public function setId($id);
 
@@ -48,7 +55,7 @@ interface ObjectInterface extends DataInterface
    *
    * @param int $id The new parent object ID.
    *
-   * @return \MapsSystem\Bridge\Data\ObjectInterface The current instance
+   * @return \MapsSystem\Bridge\Data\Publication\ObjectInterface The current instance
    */
   public function setParentId($id);
 
@@ -64,7 +71,7 @@ interface ObjectInterface extends DataInterface
    *
    * @param int $id The new source object ID.
    *
-   * @return \MapsSystem\Bridge\Data\ObjectInterface The current instance
+   * @return \MapsSystem\Bridge\Data\Publication\ObjectInterface The current instance
    */
   public function setSourceId($id);
 
@@ -80,7 +87,7 @@ interface ObjectInterface extends DataInterface
    *
    * @param string $code The new object code.
    *
-   * @return \MapsSystem\Bridge\Data\ObjectInterface The current instance
+   * @return \MapsSystem\Bridge\Data\Publication\ObjectInterface The current instance
    */
   public function setCode($code);
 
@@ -96,7 +103,7 @@ interface ObjectInterface extends DataInterface
    *
    * @param int $nature The new object nature.
    *
-   * @return \MapsSystem\Bridge\Data\ObjectInterface The current instance
+   * @return \MapsSystem\Bridge\Data\Publication\ObjectInterface The current instance
    */
   public function setNature($nature);
 
@@ -112,7 +119,7 @@ interface ObjectInterface extends DataInterface
    *
    * @param int $type The new object type.
    *
-   * @return \MapsSystem\Bridge\Data\ObjectInterface The current instance
+   * @return \MapsSystem\Bridge\Data\Publication\ObjectInterface The current instance
    */
   public function setObjectType($type);
 
@@ -128,7 +135,7 @@ interface ObjectInterface extends DataInterface
    *
    * @param int $sequence The new object sequence.
    *
-   * @return \MapsSystem\Bridge\Data\ObjectInterface The current instance
+   * @return \MapsSystem\Bridge\Data\Publication\ObjectInterface The current instance
    */
   public function setSequence($sequence);
 
@@ -144,7 +151,7 @@ interface ObjectInterface extends DataInterface
    *
    * @param int $status The new object status.
    *
-   * @return \MapsSystem\Bridge\Data\ObjectInterface The current instance
+   * @return \MapsSystem\Bridge\Data\Publication\ObjectInterface The current instance
    */
   public function setStatus($status);
 
@@ -160,7 +167,7 @@ interface ObjectInterface extends DataInterface
    *
    * @param \DateTime $date The last modification date.
    *
-   * @return \MapsSystem\Bridge\Data\ObjectInterface The current instance
+   * @return \MapsSystem\Bridge\Data\Publication\ObjectInterface The current instance
    */
   public function setUpdated(\DateTime $date);
 
