@@ -30,6 +30,22 @@ interface DataInterface
 {
 
     /**
+     * This status means that the data were created manually, without calling the API.
+     *
+     * We use a negative number to avoid conflict with MaPS System® statuses.
+     */
+    const STATUS_CUSTOM = -1;
+
+    /**
+     * This status means that an error occurred while requesting the data from the API.
+     * This could be a connexion problem, an error inside MaPS System®, or an error while
+     * deserializing the data (malformed JSON, wrong JMS annotations, etc.).
+     *
+     * We use a negative number to avoid conflict with MaPS System® statuses.
+     */
+    const STATUS_API_ERROR = -2;
+
+    /**
      * Get the response status.
      */
     public function getResponseStatus();
@@ -38,6 +54,16 @@ interface DataInterface
      * Get the response message.
      */
     public function getResponseMessage();
+
+    /**
+     * Whether the data are valid.
+     *
+     * Child classes should use the API response statuses to define whether the data are
+     * valid or not.
+     *
+     * @return bool TRUE if data are valid.
+     */
+    public function isValid();
 
 }
 

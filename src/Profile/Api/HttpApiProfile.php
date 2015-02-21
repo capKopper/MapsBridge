@@ -242,7 +242,7 @@ class HttpApiProfile extends AbstractProfile
         // which was refused to us... No need to ask twice!
         if ($response->getStatusCode() != 202)
         {
-            throw new HttpProfileException(sprintf('Failed to get the server private key with statuc code %s.', $response->getStatusCode()), HttpProfileException::CODE_HTTP_UNSUPPORTED_STATUS);
+            throw new HttpProfileException(sprintf('Failed to get the server private key with status code %s.', $response->getStatusCode()), HttpProfileException::CODE_HTTP_UNSUPPORTED_STATUS);
         }
 
         $data = json_decode($response->getBody());
