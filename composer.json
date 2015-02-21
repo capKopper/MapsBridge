@@ -15,7 +15,6 @@
         "jms/serializer": "~0.15",
         "widop/http-adapter": "~1.0"
     },
-    "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
             "MapsSystem\\Bridge\\": "src/"
